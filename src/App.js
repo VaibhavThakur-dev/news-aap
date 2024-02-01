@@ -1,14 +1,19 @@
 import React from 'react'
-//import Navbar from './component/Navbar'
-import Header from './component/Header'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import ContactUs from './pages/ContactUs'
+
+
 
 function App() {
   return (
     <>
-      <Header/>
-      <main>
-
-      </main>
+    <BrowserRouter>    
+      <Routes>
+        <Route path='/' element=<Home/> />
+        <Route path='/contactus' element=<ContactUs/> />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
