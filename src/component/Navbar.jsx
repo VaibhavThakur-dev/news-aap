@@ -5,14 +5,14 @@ function Navbar() {
     <>
   
     <nav
-      class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-black bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+      class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-zinc-600 border rounded-none shadow-md h-max border-zinc-600/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
       <div class="flex items-center justify-between text-blue-gray-900">
         <Link to="/"
-          class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+          class="mr-4 block cursor-pointer py-1.5 font-sans text-lg font-medium leading-relaxed text-inherit antialiased">
           FastNews.com
         </Link>
         <div class="flex items-center gap-4">
-          <div class="hidden mr-4 lg:block">
+          {/* <div class="hidden mr-4 lg:block">
             <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
               <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                 <Link to="/news" class="flex items-center">
@@ -21,10 +21,10 @@ function Navbar() {
               </li>
              
             </ul>
-          </div>
+          </div> */}
           <div class="flex items-center gap-x-1">
           <Link
-              class="hidden select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+              class="hidden select-none rounded-lg bg-[#caca33] py-2 px-4 text-center align-middle font-sans text-sm  uppercase  font-extrabold shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
               
               to={'/contactus'}>
               <span>Contact Us</span>

@@ -12,3 +12,9 @@
     font-family: 'Rubik Mono One', monospace; */
   }
 }
+*{
+  font-family: "Gilroy";
+}
+::selection{
+  color: rgb(202, 202, 51);
+}
