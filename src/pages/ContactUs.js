@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import axios from 'axios'
-import Navbar from '../component/Navbar'
+
 import { Link } from 'react-router-dom'
 
 function ContactUs() {
@@ -34,8 +34,8 @@ function ContactUs() {
 
   return (
     <>
-      <Navbar/>
-      <section class="bg-white dark:bg-gray-900 h-screen flex flex-col justify-between items-center">
+      
+      <section class=" bg-white dark:bg-gray-900 h-screen flex flex-col justify-between items-center mb-64">
       <div className='flex gap-3 text-lg p-4'><Link to={'/'}>Home</Link> | <Link className='cursor-not-allowed text-gray-400'>Contact Us</Link></div>
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>

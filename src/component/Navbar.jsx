@@ -24,14 +24,14 @@ function Navbar() {
           </div> */}
           <div class="flex items-center gap-x-1">
           <Link
-              class="hidden select-none rounded-lg bg-[#caca33] py-2 px-4 text-center align-middle font-sans text-sm  uppercase  font-extrabold shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+              class=" select-none rounded-lg bg-[#caca33] py-2 px-4 text-center align-middle font-sans text-sm  uppercase  font-extrabold shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
               
               to={'/contactus'}>
               <span>Contact Us</span>
             </Link>
            
           </div>
-          <button
+          {/* <button
             class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
             type="button">
             <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
@@ -40,7 +40,7 @@ function Navbar() {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
