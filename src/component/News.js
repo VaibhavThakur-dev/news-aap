@@ -8,24 +8,22 @@ function News() {
   let [category, setCategory] = useState("all");
   let [language, setLanguage] = useState("hi");
 
-  let getData = async () => {
-    let res = await axios.get(
-      `https://newsapi.org/v2/everything?q=${category}&language=${language}&apiKey=63e22c008f394270921fab49006be05a`
-    );
-    setList(res.data.articles);
-  };
 
-   useEffect(()=>{
-    getData()
-   },[])
+
     useEffect(()=>{
+      let getData = async () => {
+        let res = await axios.get(
+          `https://newsapi.org/v2/everything?q=${category}&language=${language}&apiKey=63e22c008f394270921fab49006be05a`
+        );
+        setList(res.data.articles);
+      };
       getData();
     },[category,language])
 
   return (
     <>
       <section className="  h-full w-full flex gap-5 flex-col lg:flex-row p-10 flex-wrap justify-center  lg:flex-nowrap  ">
-        <div className="  text-xs md:text-lg lg:text-xl text-white lg:w-1/5  lg:flex-col text-center flex-none flex justify-center  bg-zinc-600/25 rounded-lg gap-5  md:p-5 shadow-2xl">
+        <div className="  text-xs md:text-lg lg:text-xl text-white lg:w-1/6  lg:flex-col text-center flex-none flex justify-center  bg-zinc-600/25 rounded-lg gap-5  md:p-5 shadow-2xl">
           <div className="flex flex-col md:gap-2 border-white rounded-md border p-2  ">
             <h5 className="bg-zinc-600 p-1 ">LANGUAGE</h5>
             <ul className="text-center flex flex-wrap  justify-center gap-1 md:gap-5">
@@ -89,6 +87,7 @@ function News() {
                 Busniess
               </button>
             </li>
+            
           </ul>
          </div>
         </div>
